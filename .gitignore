@@ -1,0 +1,10 @@
+# Python cache and virtual environment
+.venv
+__pycache__
+
+# Log and output files
+*.log
+*.csv
+
+# Scrapy HTTP cache
+*/.scrapy/httpcache
