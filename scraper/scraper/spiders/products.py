@@ -10,7 +10,7 @@ class ProductsSpider(scrapy.Spider):
     
     Command line argument:
     - parse_limit: Maximum number of items parsed per level-2 category.
-    Defaults to 500.
+    Defaults to 50.
     (If parse_limit > 500, only 500 items are scraped per category due to
     limitations in Shopee API).
 
