@@ -1,6 +1,6 @@
 # 1. Introduction
 
-This project aims to crawl basic data of products in the main categories of [Shopee Vietnam](https://shopee.vn/) using Scrapy, a powerful web sccraping framework in Python. This website are dynamically generated. Website data is pulled from Shopee API (endpoints are tracked via browser's developer tools).
+This mini project aims to crawl basic data of products in the main categories of [Shopee Vietnam](https://shopee.vn/) using Scrapy, a powerful web sccraping framework in Python. This website are dynamically generated. Website data is pulled from Shopee API (endpoints are tracked via browser's developer tools).
 
 # 2. Technology used
 
