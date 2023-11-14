@@ -25,7 +25,7 @@ class ProductsSpider(scrapy.Spider):
         fetch level-2 category info
         """
         # Command line argument parse_limit validation (-a input is string type)
-        self.parse_limit = getattr(self, 'parse_limit', '500')
+        self.parse_limit = getattr(self, 'parse_limit', '50')
         if not self.parse_limit.isnumeric():
             raise TypeError('parse_limit must be an integer')
         
