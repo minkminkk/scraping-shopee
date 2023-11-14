@@ -13,7 +13,8 @@ This mini project aims to crawl basic data of products in the main categories of
 
 - Product data from main (level-1) categories and its children (level-2) categories are extracted into `csv` file.
   - Data from each level-2 category is extracted from a different API endpoint.
-- Output `csv` path: `output/{execution_timestamp}.csv`.
+- Output `csv` path: `scraper/output/{execution_timestamp}.csv`.
+- Logging path: `scraper/logs/{execution_timestamp}.log`.
 - Output fields:
   - `main_cat_name`: Name of level-1 category.
   - `child_cat_name`: Name of level-2 category.
@@ -29,8 +30,6 @@ This mini project aims to crawl basic data of products in the main categories of
 
 (Note: `product_price` usually has many value depending on product type, therefore is indicated by 2 values `min` and `max`. In case product only has 1 price, the `min` and `max` value should be identical).
 
-- Log files path: `logs/{execution_timestamp}.log`.
-
 # 4. Usage
 
 1. Requirements: Python 3.8+ distribution with `$PATH` already set up.
@@ -41,5 +40,3 @@ This mini project aims to crawl basic data of products in the main categories of
    - Argument:
      - `parse_limit`: Amount of items per level-2 category. If `parse_limit` exceeds 500, only 500 items are crawled per level-2 category due to API limit.
    - Example usage: `make crawl parse_limit=100`.
-   - Output path: `scraper/output/{execution_timestamp}.csv`.
-   - Log path: `scraper/logs/{execution_timestamp}.log`.
